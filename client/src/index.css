@@ -1,0 +1,485 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif; */
+/* font-family: 'Playfair Display', serif; */
+
+/* //navbar css */
+.navbar {
+  background: linear-gradient(135deg, #6a0dad, #9740ba) !important;
+  color: white !important;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px rgba(128, 0, 128, 0.4);
+  border-bottom: solid #6a0dad !important;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-link {
+  font-weight: 300 !important;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-family: "roboto", sans-serif;
+  letter-spacing: 3px;
+}
+/* =============================
+==========footer============= */
+
+.footer {
+  color: white;
+  padding: 12px 1px;
+  background: linear-gradient(to right, #434343, #000000);
+  text-align: center;
+  margin-top: auto;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover {
+  color: #ffefba;
+  border-bottom: 1px solid #ffefba;
+}
+/* =================================
+======== page not found css ======= */
+.pnf {
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading {
+  font-weight: normal;
+}
+
+.pnf-btn {
+  color: white;
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.pnf-btn:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+/* ========================================= */
+/* =========contact us ========= */
+.contactus {
+  margin: 0;
+  padding: 0;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ============= Global Styles ============= */
+body {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 19px;
+  font-weight: 600;
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Override color inside navbar and footer to keep them styled separately */
+.navbar,
+.navbar * {
+  color: white !important;
+}
+
+.footer,
+.footer * {
+  color: inherit !important;
+}
+
+/* ========================= */
+/* ============= Dropdown Menu ============= */
+.dropdown-menu {
+  background-color: rgb(17, 17, 18) !important;
+  border: 1px solid #ccc;
+}
+
+.dropdown-item {
+  color: rgb(255, 255, 255) !important;
+  font-weight: 600 !important;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f1f1;
+  color: #6a0dad !important; /* Optional: add hover effect */
+}
+
+/* ==========================================*/
+/* Style the card inside the Dashboard */
+.card {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333 !important;
+  color: white !important;
+}
+
+.card-body {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+.card-title {
+  color: white !important;
+}
+
+.card-text {
+  color: #ccc !important;
+}
+
+/* Section Title Styles */
+.section-title {
+  background: rgba(106, 13, 173, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 15px 30px;
+  border-radius: 15px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.section-title:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+  transition: all 0.3s ease;
+}
+
+/* Screen styles */
+.screen-container {
+  perspective: 1000px;
+  margin-bottom: 2rem;
+}
+
+.screen {
+  background: #fff;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-30deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.screen-content {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Seat grid styles */
+.seat-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 10px;
+  margin: 20px 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.seat {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #444;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.seat:hover:not(:disabled) {
+  background: #444;
+  color: #fff;
+}
+
+.seat.selected {
+  background: #28a745;
+  border-color: #28a745;
+  color: #fff;
+}
+
+.seat.booked {
+  background: #dc3545;
+  border-color: #dc3545;
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.seat-sample {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #444;
+  border-radius: 3px;
+}
+
+.seat-sample.available {
+  background: #fff;
+}
+
+.seat-sample.selected {
+  background: #28a745;
+  border-color: #28a745;
+}
+
+.seat-sample.booked {
+  background: #dc3545;
+  border-color: #dc3545;
+}
+
+/* Modal Styles */
+.modal-content {
+  background-color: #1a1a1a !important;
+  color: white !important;
+  border: 1px solid #333;
+}
+
+.modal-header {
+  border-bottom: 1px solid #333;
+}
+
+.modal-footer {
+  border-top: 1px solid #333;
+}
+
+.modal-title {
+  color: white !important;
+}
+
+/* Table Styles */
+.table {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+.table thead th {
+  background-color: #2a2a2a !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+.table td {
+  background-color: #1a1a1a !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #222 !important;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+  background-color: #1a1a1a !important;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #2a2a2a !important;
+}
+
+/* Button Styles */
+.btn {
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #6a0dad;
+  border-color: #6a0dad;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #9740ba;
+  border-color: #9740ba;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #444;
+  border-color: #444;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #555;
+  border-color: #555;
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  border-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #bb2d3b;
+  border-color: #bb2d3b;
+  color: white;
+}
+
+/* Form Label Styles */
+.form-label {
+  color: white !important;
+}
+
+/* Search Bar Styles */
+.form-control.search-bar {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.form-control.search-bar:focus {
+  background-color: rgba(255, 255, 255, 0.15) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.1);
+  color: white !important;
+}
+
+.form-control.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Admin Dashboard Container Styles */
+.container-fluid {
+  background-color: transparent !important;
+}
+
+/* Admin Dashboard Text Styles */
+p, h1, h2, h3, h4, h5, h6 {
+  color: white !important;
+}
+
+/* Admin Dashboard Specific Styles */
+.dashboard .card {
+  background-color: #1a1a1a !important;
+  border: 1px solid #333 !important;
+  color: white !important;
+}
+
+.dashboard .card-body {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+.dashboard .card-title {
+  color: white !important;
+}
+
+.dashboard .card-text {
+  color: #ccc !important;
+}
+
+.dashboard .table {
+  background-color: #1a1a1a !important;
+  color: white !important;
+}
+
+.dashboard .table thead th {
+  background-color: #2a2a2a !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+.dashboard .table td {
+  background-color: #1a1a1a !important;
+  border-color: #333 !important;
+  color: white !important;
+}
+
+.dashboard .table-striped tbody tr:nth-of-type(odd) {
+  background-color: #222 !important;
+}
+
+.dashboard .table-striped tbody tr:nth-of-type(even) {
+  background-color: #1a1a1a !important;
+}
+
+.dashboard .table-hover tbody tr:hover {
+  background-color: #2a2a2a !important;
+}
+
+.dashboard .container-fluid {
+  background-color: transparent !important;
+}
+
+.dashboard p, 
+.dashboard h1, 
+.dashboard h2, 
+.dashboard h3, 
+.dashboard h4, 
+.dashboard h5, 
+.dashboard h6 {
+  color: white !important;
+}
+
+/* Genre Filter Styles */
+.form-select.genre-filter {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  margin-top: 50px;
+}
+
+.form-select.genre-filter option {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+  color: white !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
