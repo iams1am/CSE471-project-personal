@@ -17,7 +17,7 @@ const app = express();
 
 //middelwares
 app.use(cors({
-  origin: '*',  // Allow all origins temporarily for debugging
+  origin: 'https://movie-booking-frontend-phi.vercel.app',
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
