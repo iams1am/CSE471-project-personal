@@ -8,3 +8,6 @@ Vercel Deployment :
 vercel backend :
 https://movie-booking-backend-tau.vercel.app/
 
+![image](https://github.com/user-attachments/assets/b63d4adc-a3ef-4759-9570-abbb5171b9e1)
+
+
