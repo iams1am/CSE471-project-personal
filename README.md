@@ -13,3 +13,49 @@ https://movie-booking-backend-tau.vercel.app/
 
 
 
+## Tech Stack
+
+### Frontend
+- React.js
+- React Router
+- Axios
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- JWT Authentication
+- bcrypt
+
+## Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- MongoDB
+- npm or yarn
+
+### Installation
+
+1. Install dependencies
+```bash
+# Install server dependencies
+npm install
+
+# Install client dependencies
+cd ../client
+npm install
+```
+
+2. Set up the environment file
+
+3. Run the application
+```bash
+# Start the website -
+npm run dev
+```
+
+## License
+
+This project is licensed under the CC BY-NC and CC BY-NC-ND explicit Licenses — see the LICENSE file for details. 
+
+
